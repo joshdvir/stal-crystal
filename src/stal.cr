@@ -29,7 +29,7 @@ module Stal
 
   LUA = {
     src: with_file("stal/stal.lua", "cat"),
-    sha: with_file("stal/stal.lua", "shasum").split(' ').first,
+    sha: with_file("stal/stal.lua", "sha1sum").split(' ').first,
   }
 
   # Evaluate expression `expr` in the Redis client `c`.
